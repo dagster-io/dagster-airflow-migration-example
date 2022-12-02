@@ -6,7 +6,7 @@ x-common:
   build: .
   user: "${AIRFLOW_UID}:0"
   env_file:
-    - .env
+    - .env-airflow
   volumes:
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
@@ -32,7 +32,7 @@ services:
       interval: 5s
       retries: 5
     env_file:
-      - .env
+      - .env-airflow
 
   scheduler:
     <<: *common
