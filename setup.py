@@ -7,6 +7,7 @@ setup(
         "dagster>=1.0.0",
         "dagster_airflow>=0.17.5",
         "apache-airflow==2.4.3",
+        # airflow dag specific dependencies
         "docker>=5.0.3,<6.0.0",
         "apache-airflow-providers-docker>=3.2.0,<4",
         "apache-airflow-providers-apache-spark>=3.0.0,<4",
