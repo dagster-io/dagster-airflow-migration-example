@@ -4,7 +4,7 @@ version: '3.4'
 x-common:
   &common
   build: .
-  user: "${AIRFLOW_UID}:0"
+  user: "0:0"
   env_file:
     - .env-airflow
   volumes:
@@ -65,5 +65,5 @@ services:
       - -c
       - |
         mkdir -p /sources/logs /sources/dags /sources/plugins
-        chown -R "${AIRFLOW_UID}:0" /sources/{logs,dags,plugins}
+        chown -R "0:0" /sources/{logs,dags,plugins}
         exec /entrypoint airflow version
