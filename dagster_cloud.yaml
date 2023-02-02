@@ -1,4 +1,2 @@
-locations:
-  - location_name: dagster_migration
-    code_source:
-      package_name: dagster_migration
+load_from:
+  - python_package: dagster_migration
