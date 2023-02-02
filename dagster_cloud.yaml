@@ -1,4 +1,4 @@
 locations:
   - location_name: dagster-airflow-migration-example
     code_source:
-      package_name: '--working-directory'
+      package_name: -d
