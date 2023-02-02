@@ -1,4 +1,4 @@
 locations:
-  - location_name: dagster-airflow-migration-example
+  - location_name: dagster_migration
     code_source:
-      package_name: https://github.com/odette-elementl/dagster-airflow-migration-example/
+      package_name: dagster_migration
