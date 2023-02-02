@@ -12,6 +12,7 @@ setup(
         "apache-airflow-providers-docker>=3.2.0,<4",
         "apache-airflow-providers-apache-spark>=3.0.0,<4",
         "kubernetes>=10.0.1",
+        "dagster-cloud",
     ],
     extras_require={"dev": ["dagit", "pytest"]},
 )
