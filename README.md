@@ -20,6 +20,18 @@ docker-compose up
 
 pip install -e ".[dev]"
 
-dagit
+dagster dev
 
+```
+### to run on dagster-cloud 
+
+```bash
+
+pip install -e ".[dev]"
+pip install dagster-cloud
+
+
+dagster-cloud serverless deploy \
+      --location-name dagster_migration  \
+      --package-name  dagster_migration
 ```
