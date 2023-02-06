@@ -1,1 +1,1 @@
-from .repository import migrated_dags
+from .definitions import migrated_dags
